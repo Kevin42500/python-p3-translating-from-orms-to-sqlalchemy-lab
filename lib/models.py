@@ -7,7 +7,7 @@ Base = declarative_base()
 
 class Dog(Base):
     __tablename__ = 'dogs'
-
-    id = Column(Integer(), primary_key=True)
-    name = Column(String())
-    breed = Column(String())
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    breed = Column(String)
+    age = Column(Integer)
